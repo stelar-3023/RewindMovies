@@ -8,14 +8,6 @@ $(document).ready(() => {
 });
 
 const apiurl = "http://www.omdbapi.com/?apikey=dfe6d885&";
-
-// function getMovie(searchText) {
-//   fetch(apiurl + "s=" + searchText)
-//     .then((response) => response.json())
-//     .then((json) => console.log(json))
-//     .catch((err) => console.log(err));
-// }
-
 const getMovie = async (searchTitle) => {
   console.log("async fetch");
   try {
@@ -28,7 +20,7 @@ const getMovie = async (searchTitle) => {
         <div class="poster text-center">
           <img src="${movie.Poster}">
           <h5>${movie.Title}</h5>
-          <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-danger" style="margin-bottom: 10px" href="#">More Info</a>
+          <a onclick="moreInfo('${movie.imdbID}')" class="btn btn-warning" style="margin-bottom: 10px" href="#">More Info</a>
         </div>
       </div>
       `;
