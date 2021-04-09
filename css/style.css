@@ -1,17 +1,2 @@
-#movies img {
-  width: 70%;
-}
-
-@media (min-width: 960px) {
-  #movies .col-md-3 .poster {
-    height: 390px;
-  }
-  #movies .col-md-3 img {
-    height: 240px;
-  }
-}
-
-#searchForm {
-  margin-bottom: 30px;
-}
+#showcase{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.forms-container{position:relative;width:100%;height:100%;top:0;left:0;display:none;color:#fff}.form-group{position:relative;width:100%;height:100%;top:0;left:0;display:none;color:#fff}#movies .col-md-3 img{height:240px}#searchForm{margin-bottom:30px}body{background-color:#0047ab;color:#fff}a{color:yellow}.poster{color:#fff}.form-text{color:#fff}h1{font-family:"Anton",sans-serif;font-size:64px}h1 h4{font-family:"Anton",sans-serif;font-size:18px}#movies img{width:65%}@media (min-width: 1000px){#movies .col-md-3 .poster{height:390px}}
 /*# sourceMappingURL=style.css.map */

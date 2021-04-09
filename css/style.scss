@@ -1,17 +1,39 @@
-#movies img {
-  width: 70%;
+@import "config";
+@import "utilities";
+
+body {
+  background-color: $primary-color;
+  color: $secondary-color;
 }
 
-@media (min-width: 960px) {
+a {
+  color: yellow;
+}
+
+.poster {
+  color:$secondary-color;
+}
+
+.form-text {
+  color: $secondary-color;
+}
+
+h1 {
+  font-family:$font-stack;
+  font-size: 64px;
+
+  h4 {
+    font-family:$font-stack;
+    font-size: 18px;
+  }
+}
+
+#movies img {
+  width: 65%;
+}
+
+@media (min-width: 1000px) {
   #movies .col-md-3 .poster {
     height: 390px;
   }
-
-  #movies .col-md-3 img {
-    height: 240px;
-  }
-}
-
-#searchForm {
-  margin-bottom: 30px;
 }

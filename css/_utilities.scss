@@ -1,0 +1,35 @@
+#showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forms-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    color:$secondary-color;
+  }
+
+  .form-group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    color:$secondary-color;
+  }
+  
+  #movies .col-md-3 img {
+    height: 240px;
+  }
+
+
+#searchForm {
+  margin-bottom: 30px;
+}
