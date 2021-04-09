@@ -32,6 +32,8 @@ const memberSignUp = (event) => {
   localStorage.setItem("formData", JSON.stringify(formData));
   console.log(localStorage.getItem("formData"));
   event.preventDefault();
+  alert("Account successfully created.")
+  window.location = "landing.html";
 };
 
 function clearForm() {
@@ -42,9 +44,18 @@ function clearForm() {
 }
 
 function memberSignIn() {
-  if (userEmail.value == memberEmail && userPassword.value == memberPassword) {
-    alert("you're logged in");
+  let formData = JSON.parse(localStorage.getItem("formData"));
+  let storedEmail = formData.email;
+  let storedPassword = formData.password;
+  let enteredEmail = $("#memberEmail").val();
+  let enteredPassword = $("#memberPassword").val();
+  console.log(storedEmail, enteredEmail);
+  if (enteredEmail == storedEmail && enteredPassword == storedPassword) {
+    alert("Login successful.");
+    window.location = "index.html";
+    return false;
   } else {
-    alert("error");
+    alert("Incorrect username or password.");
+    window.location = "landing.html?#"
   }
 }
