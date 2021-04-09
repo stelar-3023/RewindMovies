@@ -30,7 +30,7 @@
       <a href="#" class="button btn btn-warning" id="signInButton">Sign In</a>
     </header>
     <div class="forms-container">
-      <form id="signInForm" onsubmit="memberSignIn()">
+      <form id="signInForm" onsubmit="return memberSignIn()">
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
           <input
@@ -53,9 +53,7 @@
             placeholder="Password"
           />
         </div>
-        <button type="submit" class="btn btn-warning">
-          Sign In
-        </button>
+        <button type="submit" class="btn btn-warning">Sign In</button>
         <div class="mb-3">
           <p>
             New to Rewind?

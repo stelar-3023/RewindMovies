@@ -32,7 +32,7 @@ const memberSignUp = (event) => {
   localStorage.setItem("formData", JSON.stringify(formData));
   console.log(localStorage.getItem("formData"));
   event.preventDefault();
-  alert("Account successfully created.")
+  alert("Account successfully created")
   window.location = "landing.html";
 };
 
